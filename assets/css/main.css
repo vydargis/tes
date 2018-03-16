@@ -1,0 +1,165 @@
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  color: #515151;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+
+  * Do I really need this?
+
+*/
+a, a:focus, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*------------------------------------*\
+  #CONTAINER-LEFT
+\*------------------------------------*/
+
+.container-left {
+  background: url(../img/cover-photo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 100%; */
+}
+
+  .container-left-heading {
+    color: #fff;
+    letter-spacing: .05rem;
+    line-height: 1.1;
+    text-align: left;
+    margin-top: 24vh;
+    margin-left: 4rem;
+    max-width: 75rem;
+  }
+
+    .container-left-heading h1 {
+      font-size: 7.6rem;
+      font-weight: 600;
+    }
+
+    .container-left-heading h2 {
+      font-size: 2.6rem;
+      font-weight: 300;
+    }
+
+
+/*-------------- #LOGO ---------------*/
+
+.container-left-logo img {
+  margin-left: 2.5rem;
+  margin-top: 7rem;
+  height: 6.5rem;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #CONTAINER-RIGHT
+\*------------------------------------*/
+
+.container-right {
+  height: 150%;
+}
+
+
+/*-------------- #FORM ---------------*/
+
+.container-right-form {
+  margin-top: 28vh;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 42rem;
+}
+
+.form-group {
+  margin-top: 2rem;
+  border-radius: 0;
+  border-bottom: .1rem solid #8e8e8e;
+}
+
+  .form-control {
+    color: #515151;
+    font-size: 2.66rem;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    padding: .375rem 0;
+  }
+
+  /* Removes default Boostrap 4 input outline styles */
+  .form-control:focus {
+    border-color: inherit;
+    box-shadow: none;
+  }
+
+  /* select field; selector is taken using dev tools, thus might be confusing */
+  select.form-control:not([size]):not([multiple]) {
+    height: 6rem;
+    color: #515151;
+  }
+
+  label {
+    color: #515151;
+    font-size: 2.13rem;
+    font-weight: 300;
+  }
+
+
+/*-------------- #BUTTONS ---------------*/
+
+.btn-registration, .btn-enter,
+.btn-registration:focus, .btn-enter:focus
+.btn-registration:active, .btn-enter:active {
+  font-size: 2.66rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-size: 200% auto;
+  border-radius: 50rem;
+  outline: none;
+
+  display: block;
+  width: 100%; /* Keistai elgiasi */
+
+  padding: 1.5rem 0 1.5rem 0;
+
+  transition: .5s;
+}
+
+.btn-registration {
+  border: none;
+  margin-top: 4rem;
+  color: #fff;
+  background-image: linear-gradient(to right,  #6497EF 0%, #43C6E9 51%, #6497EF 100%);
+}
+
+  .btn-registration:hover {
+    background-position: right center;
+  }
+
+.btn-enter {
+  margin-top: 1.8rem;
+  color: #43C6E9;
+  background-color: #fff;
+  border: .14rem solid #43C6E9;
+}
+
+  .btn-enter:hover {
+    border-color: #6497EF;
+    color: #6497EF;
+  }
